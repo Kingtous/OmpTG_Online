@@ -10,11 +10,17 @@ function show_process_animation(){
 }
 
 function create_temp_folder_for_current_id(){
+    
     $pPath = sys_get_temp_dir() . '/phptemp/' . session_id(); // 为当前session创建的处理文件夹，处理操作都在这个文件夹内完成
-    if (file_exists($pPath) || mkdir($pPath)) {
-        return true;
+    $phptemp = sys_get_temp_dir() . '/phptemp/';
+    if (file_exists($phptemp) || mkdir($phptemp)){
+    	if (file_exists($pPath) || mkdir($pPath)) {
+        	return true;
+    	}
+    	else return false;
+    } else {
+    	return false;
     }
-    else return false;
 }
 
 

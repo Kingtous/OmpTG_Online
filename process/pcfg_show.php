@@ -114,7 +114,7 @@ include_once "function.php";
                             $dest = $pPath . '/' . $fName; // 重命名并移动后，zip文件的路径
                             show_process_animation();
                             showMessage(LONG_RES);
-
+                            create_temp_folder_for_current_id();
                             if (file_exists($pPath) || mkdir($pPath)) {
                                 //成功创建临时文件夹或者文件夹已存在，tmp/session_id/
                                 if (move_uploaded_file($ofPath, $dest)) {

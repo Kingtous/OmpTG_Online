@@ -76,7 +76,7 @@ include_once "function.php";
                             $dest = $pPath . '/' . $fName; // 重命名并移动后，c文件的路径
                             show_process_animation();
                             showMessage(LONG_RES);
-
+			    create_temp_folder_for_current_id();
                             if (move_uploaded_file($ofPath, $dest)) {
                                 // 处理dest
                                 showMessage("Converting C Code to LL Code...");
