@@ -31,13 +31,6 @@ include_once "process/function.php"?>
 
     <iframe  width="100%" height="40px auto" align="center" style="margin-top: 15px" src="tools/time.html"></iframe>
 
-	<div class="footer">
-        <p></p>
-		<p> © 2019 OmpTG Online, RTCO-LAB, Northeastern University All Rights Reserved</p>
-		<br>
-		<a href="http://www.beian.miit.gov.cn" style="color: black; align:center;" draggable="false">冀ICP备18017068号-1</a>
-		<br>
-	</div>
 
 
 </body>
